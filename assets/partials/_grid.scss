@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+$unit: 8%;
+
+@mixin column($multiple: 12) {
+  width: $unit * $multiple;
+}
+
+$num-col: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+
+@each $value in $num-col {
+  .col-#{$value} {
+    @include column($value);
+  }
+}

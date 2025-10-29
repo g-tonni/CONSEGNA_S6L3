@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+$text-size-map: (
+  xs: 0.5em,
+  sm: 0.8em,
+  normal: 1em,
+  md: 1.2em,
+  lg: 1.5em,
+  xl: 2em,
+);
+
+@each $name, $value in $text-size-map {
+  .text-size-#{$name} {
+    font-size: $value;
+  }
+}
+
+@mixin title-big {
+}

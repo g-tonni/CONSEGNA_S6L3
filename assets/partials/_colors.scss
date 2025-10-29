@@ -1,0 +1,17 @@
+$colors-map: (
+  primary: #640fc5,
+  secondary: #0e6cff,
+  alert: #ff8700,
+  success: #4caf50,
+  light: #f4f4f4,
+  dark: #410d7d,
+);
+
+@each $name, $value in $colors-map {
+  .text-#{$name} {
+    color: $value;
+  }
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}

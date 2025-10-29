@@ -1,0 +1,54 @@
+$distance-map: (
+  xs: 0.5rem,
+  sm: 1rem,
+  normal: 1rem,
+  md: 1.5rem,
+  lg: 3rem,
+  xl: 4rem,
+  xxl: 5rem,
+);
+
+@each $name, $value in $distance-map {
+  .p-#{$name} {
+    padding: $value;
+  }
+  .pt-#{$name} {
+    padding-top: $value;
+  }
+  .pb-#{$name} {
+    padding-bottom: $value;
+  }
+  .pl-#{$name} {
+    padding-left: $value;
+  }
+  .pr-#{$name} {
+    padding-right: $value;
+  }
+  .px-#{$name} {
+    padding: 0 $value;
+  }
+  .py-#{$name} {
+    padding: $value 0;
+  }
+  .m-#{$name} {
+    margin: $value;
+  }
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+  .ml-#{$name} {
+    margin-left: $value;
+  }
+  .mr-#{$name} {
+    margin-right: $value;
+  }
+  .mx-#{$name} {
+    margin: 0 $value;
+  }
+  .my-#{$name} {
+    margin: $value 0;
+  }
+}
