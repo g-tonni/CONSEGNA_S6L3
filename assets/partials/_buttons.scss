@@ -1,0 +1,18 @@
+@mixin btn-syle($weight, $size, $px, $py) {
+  border: none;
+  border-radius: 6px;
+  padding: $px $py;
+  margin: 0 4px;
+  font: {
+    weight: $weight;
+    size: $size;
+  }
+}
+
+.btn {
+  @include btn-syle(600, 0.9em, 15px, 20px);
+}
+
+.btn-card {
+  @include btn-syle(500, 0.8em, 8px, 20px);
+}

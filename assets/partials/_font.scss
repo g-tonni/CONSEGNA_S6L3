@@ -34,4 +34,20 @@ $text-size-map: (
 }
 
 @mixin title-big {
+  font: {
+    size: 4em;
+    weight: 800;
+  }
+}
+
+$font-weigth: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $value in $font-weigth {
+  .fw-#{$value} {
+    font-weight: $value;
+  }
+}
+
+.main-title {
+  @include title-big;
 }
