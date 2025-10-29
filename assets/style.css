@@ -281,7 +281,7 @@ h5 {
 }
 
 .main-title {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 800;
 }
 
@@ -744,11 +744,8 @@ h5 {
   width: 80vw;
   align-items: flex-start;
 }
-.hero .container .image {
-  background-image: url(./img/computer.png);
-  background-size: cover;
-  height: 32vh;
-  z-index: 1;
+.hero .container img {
+  width: 100%;
 }
 
 .card {

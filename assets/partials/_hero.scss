@@ -10,10 +10,7 @@ $hero-size: 40vh;
 .hero .container {
   width: 80vw;
   align-items: flex-start;
-  .image {
-    background-image: url(./img/computer.png);
-    background-size: cover;
-    height: 32vh;
-    z-index: 1;
+  img {
+    width: 100%;
   }
 }
